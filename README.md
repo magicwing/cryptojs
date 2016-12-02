@@ -25,7 +25,7 @@ import md5 from 'cryptojs/md5';
 
 ## API
 
-参照: https://code.google.com/p/cryptojs
+鍙傜収: https://code.google.com/p/cryptojs
 
 ### MD5 Encryption
 
@@ -45,18 +45,18 @@ import enc_base64 from 'cryptojs/enc-base64';
 import CryptoJS from 'cryptojs';
 
 // Encrypt
-const utf8Str = enc_utf8.parse('你好');
+const utf8Str = enc_utf8.parse('浣犲ソ');
 const base64Str = utf8Str.toString(CryptoJS.enc.base64);
 // print: 5L2g5aW9
 
 // Decrypt
 const _utf8WordArray = enc_base64.parse('5L2g5aW9');
 const _str = enc_utf8.stringify(_utf8WordArray);
-// print: 你好
+// print: 浣犲ソ
 
 ```
 
-### 模块列表
+### 妯″潡鍒楄〃
 
 
 - ```cryptojs/core```
