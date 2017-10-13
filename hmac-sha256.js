@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './sha256';
-import './hmac';
+var CryptoJS = require('./core');
+require('./sha256');
+require('./hmac');
 
-export default CryptoJS.HmacSHA256;
+module.exports = CryptoJS.HmacSHA256;

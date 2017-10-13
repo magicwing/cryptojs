@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * Zero padding strategy.
@@ -27,4 +27,4 @@ CryptoJS.pad.ZeroPadding = {
   }
 };
 
-export default CryptoJS.pad.ZeroPadding;
+module.exports = CryptoJS.pad.ZeroPadding;

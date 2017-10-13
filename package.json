@@ -3,9 +3,30 @@
     [
       "crypto-js",
       "C:\\Disk\\WorkSpace\\gaotoo\\App\\trunk"
+    ],
+    [
+      {
+        "raw": "crypto-js@github:magicwing/cryptojs",
+        "scope": null,
+        "escapedName": "crypto-js",
+        "name": "crypto-js",
+        "rawSpec": "github:magicwing/cryptojs",
+        "spec": "github:magicwing/cryptojs",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:magicwing/cryptojs.git",
+          "sshUrl": "git+ssh://git@github.com/magicwing/cryptojs.git",
+          "httpsUrl": "git+https://github.com/magicwing/cryptojs.git",
+          "gitUrl": "git://github.com/magicwing/cryptojs.git",
+          "shortcut": "github:magicwing/cryptojs",
+          "directUrl": "https://raw.githubusercontent.com/magicwing/cryptojs/master/package.json"
+        }
+      },
+      "C:\\Disk\\WorkSpace\\RNTool"
     ]
   ],
-  "_from": "crypto-js@latest",
+  "_from": "magicwing/cryptojs",
   "_id": "crypto-js@3.1.8",
   "_inCache": true,
   "_installable": true,
@@ -22,21 +43,31 @@
   "_npmVersion": "3.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "crypto-js",
-    "raw": "crypto-js",
-    "rawSpec": "",
+    "raw": "crypto-js@github:magicwing/cryptojs",
     "scope": null,
-    "spec": "latest",
-    "type": "tag"
+    "escapedName": "crypto-js",
+    "name": "crypto-js",
+    "rawSpec": "github:magicwing/cryptojs",
+    "spec": "github:magicwing/cryptojs",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:magicwing/cryptojs.git",
+      "sshUrl": "git+ssh://git@github.com/magicwing/cryptojs.git",
+      "httpsUrl": "git+https://github.com/magicwing/cryptojs.git",
+      "gitUrl": "git://github.com/magicwing/cryptojs.git",
+      "shortcut": "github:magicwing/cryptojs",
+      "directUrl": "https://raw.githubusercontent.com/magicwing/cryptojs/master/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.8.tgz",
-  "_shasum": "715f070bf6014f2ae992a98b3929258b713f08d5",
+  "_resolved": "git://github.com/magicwing/cryptojs.git#c779e4dd72fb7b88905c1b0a14f39ad0d07006c9",
+  "_shasum": "1f47b916df03a1985941db83c11b94995919e135",
   "_shrinkwrap": null,
-  "_spec": "crypto-js",
-  "_where": "C:\\Disk\\WorkSpace\\gaotoo\\App\\trunk",
+  "_spec": "crypto-js@github:magicwing/cryptojs",
+  "_where": "C:\\Disk\\WorkSpace\\RNTool",
   "author": {
     "name": "Evan Vosberg",
     "url": "http://github.com/evanvosberg"

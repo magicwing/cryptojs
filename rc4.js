@@ -1,8 +1,8 @@
-import CryptoJS from './core';
-import './enc-base64';
-import './md5';
-import './evpkdf';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./enc-base64');
+require('./md5');
+require('./evpkdf');
+require('./cipher-core');
 
 (function() {
   // Shortcuts
@@ -124,4 +124,4 @@ import './cipher-core';
   C.RC4Drop = StreamCipher._createHelper(RC4Drop);
 }());
 
-export default CryptoJS.RC4;
+module.exports = CryptoJS.RC4;

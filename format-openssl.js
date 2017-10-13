@@ -1,4 +1,4 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
-export default CryptoJS.format.OpenSSL;
+module.exports = CryptoJS.format.OpenSSL;

@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 (function(Math) {
   // Shortcuts
@@ -249,4 +249,4 @@ import CryptoJS from './core';
   C.HmacMD5 = Hasher._createHmacHelper(MD5);
 }(Math));
 
-export default CryptoJS.MD5;
+module.exports = CryptoJS.MD5;

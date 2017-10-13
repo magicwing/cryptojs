@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * A noop padding strategy.
@@ -10,4 +10,4 @@ CryptoJS.pad.NoPadding = {
   unpad: function() {}
 };
 
-export default CryptoJS.pad.NoPadding;
+module.exports = CryptoJS.pad.NoPadding;

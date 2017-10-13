@@ -1,8 +1,8 @@
-import CryptoJS from './core';
-import './enc-base64';
-import './md5';
-import './evpkdf';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./enc-base64');
+require('./md5');
+require('./evpkdf');
+require('./cipher-core');
 
 (function() {
   // Shortcuts
@@ -746,4 +746,4 @@ import './cipher-core';
   C.TripleDES = BlockCipher._createHelper(TripleDES);
 }());
 
-export default CryptoJS.TripleDES;
+module.exports = CryptoJS.TripleDES;

@@ -1,6 +1,6 @@
-import CryptoJS from './core';
-import './sha1';
-import './hmac';
+var CryptoJS = require('./core');
+require('./sha1');
+require('./hmac');
 
 (function() {
   // Shortcuts
@@ -128,4 +128,4 @@ import './hmac';
   };
 }());
 
-export default CryptoJS.PBKDF2;
+module.exports = CryptoJS.PBKDF2;

@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './ripemd160';
-import './hmac';
+var CryptoJS = require('./core');
+require('./ripemd160');
+require('./hmac');
 
-export default CryptoJS.HmacRIPEMD160;
+module.exports = CryptoJS.HmacRIPEMD160;

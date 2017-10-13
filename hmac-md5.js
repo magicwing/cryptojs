@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './md5';
-import './hmac';
+var CryptoJS = require('./core');
+require('./md5');
+require('./hmac');
 
-export default CryptoJS.HmacMD5;
+module.exports = CryptoJS.HmacMD5;

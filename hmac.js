@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 (function() {
   // Shortcuts
@@ -126,4 +126,4 @@ import CryptoJS from './core';
   });
 }());
 
-export default CryptoJS;
+module.exports = CryptoJS;

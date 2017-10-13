@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 (function(Math) {
   // Shortcuts
@@ -180,4 +180,4 @@ import CryptoJS from './core';
   C.HmacSHA256 = Hasher._createHmacHelper(SHA256);
 }(Math));
 
-export default CryptoJS.SHA256;
+module.exports = CryptoJS.SHA256;

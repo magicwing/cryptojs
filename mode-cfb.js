@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * Cipher Feedback block mode.
@@ -60,4 +60,4 @@ CryptoJS.mode.CFB = (function() {
   return CFB;
 }());
 
-export default CryptoJS.mode.CFB;
+module.exports = CryptoJS.mode.CFB;

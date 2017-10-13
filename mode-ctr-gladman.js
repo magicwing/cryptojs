@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /** @preserve
  * Counter block mode compatible with  Dr Brian Gladman fileenc.c
@@ -83,4 +83,4 @@ CryptoJS.mode.CTRGladman = (function() {
   return CTRGladman;
 }());
 
-export default CryptoJS.mode.CTRGladman;
+module.exports = CryptoJS.mode.CTRGladman;

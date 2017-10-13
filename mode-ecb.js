@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * Electronic Codebook block mode.
@@ -22,4 +22,4 @@ CryptoJS.mode.ECB = (function() {
   return ECB;
 }());
 
-export default CryptoJS.mode.ECB;
+module.exports = CryptoJS.mode.ECB;

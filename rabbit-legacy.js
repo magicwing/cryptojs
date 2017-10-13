@@ -1,8 +1,8 @@
-import CryptoJS from './core';
-import './enc-base64';
-import './md5';
-import './evpkdf';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./enc-base64');
+require('./md5');
+require('./evpkdf');
+require('./cipher-core');
 
 (function() {
   // Shortcuts
@@ -175,4 +175,4 @@ import './cipher-core';
   C.RabbitLegacy = StreamCipher._createHelper(RabbitLegacy);
 }());
 
-export default CryptoJS.RabbitLegacy;
+module.exports = CryptoJS.RabbitLegacy;

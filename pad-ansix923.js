@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * ANSI X.923 padding strategy.
@@ -31,4 +31,4 @@ CryptoJS.pad.AnsiX923 = {
   }
 };
 
-export default CryptoJS.pad.Ansix923;
+module.exports = CryptoJS.pad.Ansix923;

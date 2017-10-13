@@ -1,3 +1,3 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
-export default CryptoJS.enc.Latin1;
+module.exports = CryptoJS.enc.Latin1;

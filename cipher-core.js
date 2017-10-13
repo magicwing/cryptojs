@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 /**
  * Cipher core components.
@@ -867,4 +867,4 @@ CryptoJS.lib.Cipher || (function(undefined) {
   });
 }());
 
-export default CryptoJS;
+module.exports = CryptoJS;

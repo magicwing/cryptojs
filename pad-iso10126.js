@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * ISO 10126 padding strategy.
@@ -26,4 +26,4 @@ CryptoJS.pad.Iso10126 = {
   }
 };
 
-export default CryptoJS.pad.Iso10126;
+module.exports = CryptoJS.pad.Iso10126;

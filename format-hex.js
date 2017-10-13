@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 (function(undefined) {
   // Shortcuts
@@ -50,4 +50,4 @@ import './cipher-core';
   };
 }());
 
-export default CryptoJS.format.Hex;
+module.exports = CryptoJS.format.Hex;

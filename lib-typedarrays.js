@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 (function() {
   // Check if typed arrays are supported
@@ -57,4 +57,4 @@ import CryptoJS from './core';
   subInit.prototype = WordArray;
 }());
 
-export default CryptoJS.lib.WordArray;
+module.exports = CryptoJS.lib.WordArray;

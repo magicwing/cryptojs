@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * ISO/IEC 9797-1 Padding Method 2.
@@ -22,4 +22,4 @@ CryptoJS.pad.Iso97971 = {
   }
 };
 
-export default CryptoJS.pad.Iso97971;
+module.exports = CryptoJS.pad.Iso97971;

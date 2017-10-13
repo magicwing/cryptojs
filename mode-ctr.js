@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./cipher-core');
 
 /**
  * Counter block mode.
@@ -40,4 +40,4 @@ CryptoJS.mode.CTR = (function() {
   return CTR;
 }());
 
-export default CryptoJS.mode.CTR;
+module.exports = CryptoJS.mode.CTR;

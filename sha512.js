@@ -1,5 +1,5 @@
-import CryptoJS from './core';
-import './x64-core';
+var CryptoJS = require('./core');
+require('./x64-core');
 
 (function() {
   // Shortcuts
@@ -305,4 +305,4 @@ import './x64-core';
   C.HmacSHA512 = Hasher._createHmacHelper(SHA512);
 }());
 
-export default CryptoJS.SHA512;
+module.exports = CryptoJS.SHA512;

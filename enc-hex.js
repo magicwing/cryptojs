@@ -1,3 +1,3 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
-export default CryptoJS.enc.Hex;
+module.exports = CryptoJS.enc.Hex;

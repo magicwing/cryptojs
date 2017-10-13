@@ -1,4 +1,4 @@
-import CryptoJS from './core';
+var CryptoJS = require('./core');
 
 /** @preserve
 (c) 2012 by Cédric Mesnil. All rights reserved.
@@ -252,4 +252,4 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   C.HmacRIPEMD160 = Hasher._createHmacHelper(RIPEMD160);
 }(Math));
 
-export default CryptoJS.RIPEMD160;
+module.exports = CryptoJS.RIPEMD160;

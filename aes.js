@@ -1,8 +1,8 @@
-import CryptoJS from './core';
-import './enc-base64';
-import './md5';
-import './evpkdf';
-import './cipher-core';
+var CryptoJS = require('./core');
+require('./enc-base64');
+require('./md5');
+require('./evpkdf');
+require('./cipher-core');
 
 (function() {
   // Shortcuts
@@ -217,4 +217,4 @@ import './cipher-core';
   C.AES = BlockCipher._createHelper(AES);
 }());
 
-export default CryptoJS.AES;
+module.exports = CryptoJS.AES;
